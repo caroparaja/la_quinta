@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.headear {
+    position: fixed;
+    z-index: 5;
+    padding: 0 4em;
+    width: 100%;
+    height: 100px;
+    background-color: #C8CFCF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_ul {
+    display: flex;
+    transform: translate(550px, 2px);
+}
+
+.nav_list {
+    color: #9919B2;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+.nav_list:hover {
+    color: #1B2631;
+}
+
+.nav_list_tiendaonline {
+    text-transform: uppercase;
+    background: #C6419C;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.nav_list_tiendaonline:hover {
+    color: #C6419C;
+    border: 2px solid black;
+    background-color: #DAF7A6;
+    padding: 6px 14px;
+}
+
+.submenu {
+    position: absolute;
+    width: 50%;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a {
+    color: black;
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    font-family: "open sans";
+    text-decoration: none;
+}
+
+body {
+    background-color: #C8CFCF;
+    color: white;
+    font-style: italic;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 1.6;
+    text-decoration: none;
+    list-style-image: url(<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTM2cHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iLTEgMCAxMzYgMTM2LjIxODUyIiB3aWR0aD0iMTM2cHQiPgo8ZyBpZD0ic3VyZmFjZTEiPgo8cGF0aCBkPSJNIDkzLjE0ODQzOCA4MC44MzIwMzEgQyAxMDkuNSA1Ny43NDIxODggMTA0LjAzMTI1IDI1Ljc2OTUzMSA4MC45NDE0MDYgOS40MjE4NzUgQyA1Ny44NTE1NjIgLTYuOTI1NzgxIDI1Ljg3ODkwNiAtMS40NjA5MzggOS41MzEyNSAyMS42MzI4MTIgQyAtNi44MTY0MDYgNDQuNzIyNjU2IC0xLjM1MTU2MiA3Ni42OTE0MDYgMjEuNzQyMTg4IDkzLjAzOTA2MiBDIDM4LjIyMjY1NiAxMDQuNzA3MDMxIDYwLjAxMTcxOSAxMDUuNjA1NDY5IDc3LjM5NDUzMSA5NS4zMzk4NDQgTCAxMTUuMTY0MDYyIDEzMi44ODI4MTIgQyAxMTkuMjQyMTg4IDEzNy4xNzU3ODEgMTI2LjAyNzM0NCAxMzcuMzQ3NjU2IDEzMC4zMjAzMTIgMTMzLjI2OTUzMSBDIDEzNC42MTMyODEgMTI5LjE5NTMxMiAxMzQuNzg1MTU2IDEyMi40MTAxNTYgMTMwLjcxMDkzOCAxMTguMTE3MTg4IEMgMTMwLjU4MjAzMSAxMTcuOTgwNDY5IDEzMC40NTcwMzEgMTE3Ljg1NTQ2OSAxMzAuMzIwMzEyIDExNy43MjY1NjIgWiBNIDUxLjMwODU5NCA4NC4zMzIwMzEgQyAzMy4wNjI1IDg0LjMzNTkzOCAxOC4yNjk1MzEgNjkuNTU0Njg4IDE4LjI1NzgxMiA1MS4zMDg1OTQgQyAxOC4yNTM5MDYgMzMuMDYyNSAzMy4wMzUxNTYgMTguMjY5NTMxIDUxLjI4NTE1NiAxOC4yNjE3MTkgQyA2OS41MDc4MTIgMTguMjUzOTA2IDg0LjI5Mjk2OSAzMy4wMTE3MTkgODQuMzI4MTI1IDUxLjIzNDM3NSBDIDg0LjM1OTM3NSA2OS40ODQzNzUgNjkuNTg1OTM4IDg0LjMwMDc4MSA1MS4zMzIwMzEgODQuMzMyMDMxIEMgNTEuMzI0MjE5IDg0LjMzMjAzMSA1MS4zMjAzMTIgODQuMzMyMDMxIDUxLjMwODU5NCA4NC4zMzIwMzEgWiBNIDUxLjMwODU5NCA4NC4zMzIwMzEgIiBzdHlsZT0iIHN0cm9rZTpub25lO2ZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTsiIC8+CjwvZz4KPC9zdmc+");
+}
+
+h1 {
+    background: #1B2631;
+    color: #DAF7A6;
+    text-align: center;
+    list-style-image: url(<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTM2cHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iLTEgMCAxMzYgMTM2LjIxODUyIiB3aWR0aD0iMTM2cHQiPgo8ZyBpZD0ic3VyZmFjZTEiPgo8cGF0aCBkPSJNIDkzLjE0ODQzOCA4MC44MzIwMzEgQyAxMDkuNSA1Ny43NDIxODggMTA0LjAzMTI1IDI1Ljc2OTUzMSA4MC45NDE0MDYgOS40MjE4NzUgQyA1Ny44NTE1NjIgLTYuOTI1NzgxIDI1Ljg3ODkwNiAtMS40NjA5MzggOS41MzEyNSAyMS42MzI4MTIgQyAtNi44MTY0MDYgNDQuNzIyNjU2IC0xLjM1MTU2MiA3Ni42OTE0MDYgMjEuNzQyMTg4IDkzLjAzOTA2MiBDIDM4LjIyMjY1NiAxMDQuNzA3MDMxIDYwLjAxMTcxOSAxMDUuNjA1NDY5IDc3LjM5NDUzMSA5NS4zMzk4NDQgTCAxMTUuMTY0MDYyIDEzMi44ODI4MTIgQyAxMTkuMjQyMTg4IDEzNy4xNzU3ODEgMTI2LjAyNzM0NCAxMzcuMzQ3NjU2IDEzMC4zMjAzMTIgMTMzLjI2OTUzMSBDIDEzNC42MTMyODEgMTI5LjE5NTMxMiAxMzQuNzg1MTU2IDEyMi40MTAxNTYgMTMwLjcxMDkzOCAxMTguMTE3MTg4IEMgMTMwLjU4MjAzMSAxMTcuOTgwNDY5IDEzMC40NTcwMzEgMTE3Ljg1NTQ2OSAxMzAuMzIwMzEyIDExNy43MjY1NjIgWiBNIDUxLjMwODU5NCA4NC4zMzIwMzEgQyAzMy4wNjI1IDg0LjMzNTkzOCAxOC4yNjk1MzEgNjkuNTU0Njg4IDE4LjI1NzgxMiA1MS4zMDg1OTQgQyAxOC4yNTM5MDYgMzMuMDYyNSAzMy4wMzUxNTYgMTguMjY5NTMxIDUxLjI4NTE1NiAxOC4yNjE3MTkgQyA2OS41MDc4MTIgMTguMjUzOTA2IDg0LjI5Mjk2OSAzMy4wMTE3MTkgODQuMzI4MTI1IDUxLjIzNDM3NSBDIDg0LjM1OTM3NSA2OS40ODQzNzUgNjkuNTg1OTM4IDg0LjMwMDc4MSA1MS4zMzIwMzEgODQuMzMyMDMxIEMgNTEuMzI0MjE5IDg0LjMzMjAzMSA1MS4zMjAzMTIgODQuMzMyMDMxIDUxLjMwODU5NCA4NC4zMzIwMzEgWiBNIDUxLjMwODU5NCA4NC4zMzIwMzEgIiBzdHlsZT0iIHN0cm9rZTpub25lO2ZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTsiIC8+CjwvZz4KPC9zdmc+");
+}
+
+ul li {
+    color: rgb(3, 16, 17);
+}
+
+.productos1 {
+    background-color: transparent;
+    color: #9919B2;
+}
+
+#productos {
+    color: #9919B2;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    background: #1B2631;
+    color: #DAF7A6;
+}
+
+h3 {
+    background: #1B2631;
+    color: #DAF7A6;
+}
+
+.h1titulo {
+    color: #9919B2;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px #DAF7A6;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#form1 {
+    color: #9919B2;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section {
+    height: 300px;
+}
+
+.nosotros {
+    width: 80%;
+    margin: 2em auto;
+}
+
+.nosotros_art {
+    margin: 4em o;
+    display: flex;
+    align-items: center;
+}
+
+.nosotros_art img {
+    height: 400px;
+}
+
+.nosotros_art--txt {
+    padding: 6em;
+}
+
+.nosotros_art--txt h3 {
+    margin-bottom: 1em;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.footer {
+    padding: 1em 4em;
+    background-color: #858386;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(gray, violet);
+}
+
+.title_footer {
+    text-align: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #858386;
+    color: #DAF7A6;
+}
+
+iframe,
+footer ul {
+    padding: 1em;
+    border-radius: 300px;
+}
+
+.footer ul i {
+    padding: 0.5em;
+    color: #DAF7A6;
+    font-size: 2em;
+}
+
+footer li:hover {
+    color: #DAF7A6;
+}
+
+.img1 {
+    transform: translate(50px, 50px);
+}
+
+.img2 {
+    transform: translate(-20px, 15px);
+}
+
+.imglogo {
+    transform: translate(100px, 50px);
+}
